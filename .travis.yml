@@ -6,5 +6,5 @@ julia:
     - 0.5
 notifications:
     email: false
-script:
+before_script:
     - julia -e 'Pkg.add("Nettle"); Pkg.add("Iterators"); Pkg.add("Formatting")'
